@@ -1,0 +1,18 @@
+{% extends 'base.html'%}
+{% block content %}
+<h1>Tech Types</h1>
+<table class='table'>
+<tr>
+    <th>Type Name</th>
+    <th>Description</th>
+
+</tr>
+{% for t in types_list %}
+<tr>
+    <td>{{ t.techtypename }}</td>
+    <td>{{ t.techdescription }}</td>
+</tr>
+
+{% endfor %}
+</table>
+{% endblock %}
