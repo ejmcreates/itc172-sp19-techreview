@@ -7,5 +7,7 @@ urlpatterns=[
     path('getproducts/', views.getproducts, name='products'),
     path('productdetail/<int:id>', views.productdetails, name='productdetail'),
     path('newProduct/', views.newProduct, name='newproduct'),
-    path('newReview/', views.newReview, name='newreview')
+    path('newReview/', views.newReview, name='newreview'),
+    path('loginmessage/', views.loginmessage, name='loginmessage'),
+    path('logoutmessage/', views.logoutmessage, name='logoutmessage'),
 ]
